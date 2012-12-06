@@ -1,0 +1,127 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eas.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET"/>    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+         <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".DemoScreens"
+            android:label="@string/title_activity_demo_screens" >
+            <intent-filter>
+                <action android:name="com.eas.demo.DemoScreens" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_demo_screens" >
+            <intent-filter>
+                <action android:name="com.eas.demo.Home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_home" >
+            <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Details"
+            android:label="@string/title_details" >
+            <intent-filter>
+                <action android:name="com.eas.demo.Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Registration"
+            android:label="@string/title_details" >
+            <intent-filter>
+                <action android:name="com.eas.demo.Registration" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddSubscription"
+            android:label="@string/title_add_subs" >
+            <intent-filter>
+                <action android:name="com.eas.demo.AddSubscription" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Notifications"
+            android:label="@string/title_notify">
+            <intent-filter>
+                <action android:name="com.eas.demo.Notifications" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Values"
+            android:label="@string/title_values" >
+            <intent-filter>
+                <action android:name="com.eas.demo.Values" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Subscribers"
+            android:label="@string/title_subscribers" >
+            <intent-filter>
+                <action android:name="com.eas.demo.Subscribers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Locations"
+            android:label="@string/title_subscribers" >
+            <intent-filter>
+                <action android:name="com.eas.demo.Locations" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Manage"
+            android:label="@string/title_subscribers" >
+            <intent-filter>
+                <action android:name="com.eas.demo.Manage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name=".SendService">
+            <intent-filter >
+                <action android:name="com.eas.demo.SendService"/>
+            </intent-filter>
+        </service>
+        <service android:name=".ActivityService">
+            <intent-filter >
+                <action android:name="com.eas.demo.ActivityService"/>
+            </intent-filter>
+        </service>
+        <service android:name=".LocService">
+            <intent-filter >
+                <action android:name="com.eas.demo.LocService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+    
+</manifest>
