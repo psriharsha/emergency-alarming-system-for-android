@@ -1,0 +1,174 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+    
+     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+        <TableRow >
+
+    		<TextView
+	        	android:id="@+id/textView1"
+    	    	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:padding="10dp"
+        		android:layout_marginTop="30dp"
+        		android:text="@string/dob" />
+	
+	    	<EditText
+            	android:id="@+id/dob"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="10dp"
+            	android:ems="10"
+            	android:hint="@string/nothing"
+            	android:padding="10dp" >
+        	</EditText>
+    	</TableRow>
+	
+        <TableRow>
+	    	<TextView
+        		android:id="@+id/sex"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="10dp"
+        		android:padding="10dp"
+        		android:text="@string/gender" />
+		</TableRow>
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/nothing"
+            android:padding="10dp" >
+        </EditText>
+
+        <TableRow>
+    	<TextView
+	        android:id="@+id/textView2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/blood"
+        	android:layout_marginTop="10dp"
+        	android:padding="10dp" />
+    	</TableRow>
+    	
+        <EditText
+            android:id="@+id/blood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/nothing"
+            android:padding="10dp" >
+        </EditText>
+        <TableRow>
+    	<TextView
+	        android:id="@+id/textView3"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/contact"
+        	android:layout_marginTop="10dp"
+        	android:padding="10dp" />
+    	</TableRow>
+    	
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/nothing"
+            android:padding="10dp" >
+        </EditText>
+        <TableRow>
+    	<TextView
+	        android:id="@+id/textView4"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/routine_start"
+        	android:layout_marginTop="10dp"
+        	android:padding="10dp" />
+    	</TableRow>
+    	
+    	<TimePicker
+    	    android:id="@+id/routine_start"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content" />
+        
+        <TableRow>
+    	<TextView
+	        android:id="@+id/textView5"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/routine_end"
+        	android:layout_marginTop="10dp"
+        	android:padding="10dp" />
+    	</TableRow>
+    	
+        
+    	<TimePicker
+    	    android:id="@+id/routine_end"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content" />
+    	<TableRow>
+    	<TextView
+	        android:id="@+id/textView6"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/allergy"
+        	android:layout_marginTop="10dp"
+        	android:padding="10dp" />
+    	</TableRow>
+    	
+        <EditText
+            android:id="@+id/allergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/allergy_hint"
+            android:padding="10dp" >
+        </EditText>
+        <TableRow>
+    	<TextView
+	        android:id="@+id/textView7"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/first_aid"
+        	android:layout_marginTop="10dp"
+        	android:padding="10dp" />
+    	</TableRow>
+    	
+        <EditText
+            android:id="@+id/first_aid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/allergy_hint"
+            android:padding="10dp" >
+        </EditText>
+        <TableRow>
+            <Button
+        		android:id="@+id/login"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/save_details"
+        		android:layout_gravity="center_horizontal"
+        		android:paddingRight="15dp"    
+        		android:paddingLeft="15dp"
+        		android:background="@color/univ"
+        		android:textColor="@color/head"
+        		android:layout_marginTop="20dp" />
+        </TableRow>
+	
+	 </TableLayout>
+</ScrollView>
